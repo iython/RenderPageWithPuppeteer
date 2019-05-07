@@ -8,8 +8,8 @@
 ## 构建镜像  
 - docker build -t <image_tag> .  
 
-## 参数镜像  
-- docker run -d -p 9222:9222 fc84e7  /home/xyz/puppeteer/chromium-latest-linux/latest/chrome --headless --disable-gpu --remote-debugging-port=9222 --remote-debugging-address=0.0.0.0 --disable-web-security --disable-xss-auditor --no-sandbox --disable-setuid-sandbox 
+## 启动镜像  
+- docker run -d -p 9222:9222 <image_id> /home/xyz/puppeteer/chromium-latest-linux/latest/chrome --headless --disable-gpu --remote-debugging-port=9222 --remote-debugging-address=0.0.0.0 --disable-web-security --disable-xss-auditor --no-sandbox --disable-setuid-sandbox 
 - 如果想加代理：--proxy-server=xxx.xxx.xxx.xxx:1234 
  
 
